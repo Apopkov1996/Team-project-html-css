@@ -1,0 +1,253 @@
+.bestsellers-section {
+  margin-bottom: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bestsellers-section {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .bestsellers-wrapper {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+}
+
+.bestsellers-main-picture {
+  width: 100%;
+
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 375px) {
+  .bestsellers-main-picture {
+    width: 343px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bestsellers-main-picture {
+    width: 704px;
+
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .bestsellers-main-picture {
+    width: 536px;
+
+    margin-bottom: 0;
+  }
+}
+
+.backdrop-wrapper-first {
+  position: relative;
+  overflow: hidden;
+}
+
+.backdrop-text-first {
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(217, 217, 217, 0.7);
+
+  color: var(--blue-font, #0a224a);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  padding: 50px 10px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .backdrop-text-first {
+    font-size: 18px;
+  }
+}
+
+.backdrop-wrapper-first:hover .backdrop-text-first,
+.backdrop-wrappere-first:focus .backdrop-text-first {
+  transform: translateY(0);
+}
+
+@media only screen and (min-width: 768px) {
+  .backdrop-wrapper-first:hover .backdrop-text-first,
+  .backdrop-wrapper-first:focus .backdrop-text-first {
+    transform: translateY(0);
+    padding: 200px 120px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .backdrop-wrapper-firs:hover .backdrop-text-first,
+  .backdrop-wrapper-first:focus .backdrop-text-first {
+    transform: translateY(0);
+    padding: 200px 120px;
+  }
+}
+
+.backdrop-subtext-first {
+  color: currentColor;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .backdrop-subtext-first {
+    font-size: 18px;
+  }
+}
+
+.bestsellers-title {
+  color: var(--blue-font, #0a224a);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 21px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bestsellers-title {
+    color: var(--blue-font, #0a224a);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+  }
+}
+
+.bestsellers-subtitle {
+  color: var(--blue-font, #0a224a);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bestsellers-subtitle {
+    font-size: 18px;
+
+    margin-top: 15px;
+  }
+}
+
+.bestsellers-text {
+  color: var(--blue-font, #0a224a);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .bestsellers-text {
+    font-size: 18px;
+  }
+}
+
+.bestsellers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bestsellers-list {
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .bestsellers-list {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 30px;
+
+    width: 536px;
+  }
+}
+
+.bestsellers-item {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .bestsellers-item:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bestsellers-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .bestsellers-item {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+.backdrop-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.backdrop-text {
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(217, 217, 217, 0.7);
+
+  color: var(--blue-font, #0a224a);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  padding: 50px 10px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .backdrop-text {
+    padding: 60px 10px 20px;
+  }
+}
+
+.backdrop-wrapper:hover .backdrop-text,
+.backdrop-wrapper:focus .backdrop-text {
+  transform: translateY(0);
+}
+
+.backdrop-subtext {
+  color: currentColor;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
